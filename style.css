@@ -1,0 +1,704 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    overflow-x: hidden;
+}
+#nav{
+height: 80px;
+width: 100%;
+position: fixed;
+
+display: flex;
+align-items: center;
+justify-content: space-between;
+z-index: 99;
+padding: 0 40px;
+}
+#nav-part1{
+    width: 50px;
+}
+#nav .line{
+    height:4px;
+    width: 100%;
+    background-color:#434B34;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+#nav-part2 button{
+    padding: 13px 20px;
+    font-weight: 600;
+    margin-right: 25px;
+    border: 1px solid #434B34;
+    background-color: transparent;
+    color: #434B34;
+    border-radius: 50px;
+    font-size: 15px;
+    cursor: pointer;
+}
+#nav-part2 button:nth-last-child(1){
+    background-color: #434B34;
+    color: #fff;
+}
+#page1{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+#page1 svg{
+    position: absolute;
+    top: -12%;
+    scale: 0.26;
+    fill: #434B34;
+    cursor: pointer;
+    z-index: 9;
+}
+#page1 img{
+    height: 100vh;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page2{
+    min-height: 150vh;
+    background-color: #5b6647;
+    position: relative;
+}
+#page2 #svg1{
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+}
+#page2 #text-container{
+    position: relative;
+    padding-top: 12vw;
+    z-index: 99;
+}
+#text-container h2{
+    text-align: center;
+    font-size: 4.5vw;
+    /*color: #E3E3C4;*/
+    color: #434B34;
+    font-family: "PP Woodland";
+    font-weight: 200;
+    line-height: 5vw;
+}
+#text-container h2 span{
+    font-family: "PP Woodland";
+}
+#page2 #svg2{
+    position: absolute;
+    bottom: -10%;
+    width: 300vw;
+    fill: #5B6647;
+    z-index: 9;
+}
+#page2 #svg3{
+    position: absolute;
+    bottom: -10%;
+    left: -50vw;
+    width: 300vw;
+    fill: #E3E3C4;
+}
+#page3{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #fff;
+    padding-top: 50px;
+    background-color: #F7F7EE;
+    
+}
+#page3 #text-container2{
+    position: relative;
+    padding-top: 12vw;
+    z-index: 99;
+}
+#text-container2 h1{
+    text-align: center;
+    font-size: 4.5vw;
+    color: #E3E3C4;
+    /*color: #434B34;*/
+    font-family: "PP Woodland";
+    font-weight: 200;
+    line-height: 5vw;
+}
+#text-container2 h1 span{
+    font-family: "PP Woodland";
+}
+#page3-part{
+    width: 100%;
+    min-height: 115vh;
+    position: relative;
+    background-color: #F7F7EE;
+}
+#page3-part1{
+    height: 16vh;
+    width: 25vw;
+    position: absolute;
+    top: 4vw;
+    left: 12vw;
+    padding-left: 20px;
+    padding-top: 8px;
+}
+#page3-part1 p{
+    line-height: 1.5;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.1vw;
+
+}
+#page3-part1>h5{
+    padding-top: 50px;
+    font-size: 2vw;
+    cursor: pointer;
+    font-family: "gilroy";
+    font-weight: 500;
+}
+#page3-part1>h5>i{
+    cursor: pointer;
+    color: #fff;
+    background-color: #434B34;
+    padding:1px 15px;
+    border-radius: 20px;
+    font-weight: 200;
+    margin-left: 5px;
+}
+#page3-part2{
+    height: 50vh;
+    width: 35vw;
+    position: absolute;
+    top: 20vw;
+    left: 12vw;
+}
+#page3-part2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+}
+#page3-part3{
+    height: 40vh;
+    width: 20vw;
+    position: absolute;
+    top: 31vw;
+    left: 48.5vw;
+}
+#page3-part3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+}
+#page3-part4{
+    height: 55vh;
+    width: 40vw;
+    position: absolute;
+    top: 3vw;
+    left: 48vw;
+}
+#page3-part4 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 25px;
+}
+#page4{
+    min-height: 100vh;
+    padding: 13vw 5vw;
+    background-color: #F7F7EE;
+}
+#page4 .elem{
+    height: 200px;
+    width: 100%;
+    border: 1px solid #5B6647;
+    border-top: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+#page4 .elem:nth-child(1){
+    border-top: 1px solid #5B6647;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+#page4 .elem:nth-last-child(1){
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.elem-part1{
+    height: 100%;
+    width: 22%;
+    position: absolute;
+    left: 0;
+    transform: translateX(-100%);
+    transition: all ease-out 0.4s;
+}
+.elem-part1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.elem-part2{
+    height: 100%;
+    width: 100%;
+    transition: all ease-out 0.4s;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 2.6vw 4vw;
+    color: #434B34;
+}
+.elex-1 h3{
+    margin-bottom: 1vw;
+    font-family: "PP Woodland";
+    font-size: 2.4vw;
+    font-weight: 200;
+}
+.elex-1 p{
+    font-size: 0.8vw;
+}
+.elex-2 h5{
+    background-color: #5B6647;
+    color: #E3E3C4;
+    padding: 4px 18px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 0.9vw;
+    transition: all ease-out 0.4s;
+    position: relative;
+    overflow: hidden;
+}
+.elex-2 i{
+    position: absolute;
+    background-color: #E3E3C4;
+    color: #5b6647;
+    padding: 5px 18px;
+    left: 0;
+    opacity: 0;
+    top: 0;
+}
+.elem:hover .elem-part2{
+    width: 78%;
+    background-color: #5B6647;
+    color: #E3E3C4;
+}
+.elem:hover .elem-part1{
+    transform: translateX(0);
+}
+.elem:hover .elex-2 h5{
+    background-color: #E3E3C4;
+    color: #5B6647;
+}
+.elem:hover .elex-2 h5 i{
+    opacity: 1;
+}
+#page5{
+    height: 100vh;
+    width: 100%;
+    background-color: #F7F7EE;
+
+}
+.swiper {
+    width: 100%;
+    height: 100vh;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    transform: scale(0.6) translateX(-350px) translateY(170px);
+}
+
+.swiper-slide {
+    width: 75%;
+}
+.swiper-slide:nth-child(4n) {
+    width: 20%;
+}
+.swiper-button-prev{
+    background-color: #5B6647;
+    color: #fff;
+    height: 22px;
+    padding: 0 24px;
+    font-size: 17px;
+    border-radius: 50px;
+    position: absolute;
+    top: 17%;
+    left: 85%;
+
+}
+.swiper-button-prev::after{
+    content: "";
+}
+.swiper-button-next{
+    background-color: #5B6647;
+    color: #fff;
+    height: 22px;
+    padding: 0 24px;
+    font-size: 17px;
+    border-radius: 50px;
+    position: absolute;
+    top: 17%;
+    right: 5%;
+
+}
+.swiper-button-next::after{
+    content: "";
+}
+.swiper-slide-active img{
+   transform: scale(1) translateX(0);
+}
+.swiper-pagination{
+    top: 14.5%;
+    left: 85%;
+    font-size: 15px;
+    height: 10%;
+    width: 10%;
+    font-size: 900;
+    color: #5B6647;
+}
+#page6{
+    min-height: 25vh;
+    position: relative;
+    transform: rotate(180deg);
+    background-color: #F7F7EE
+}
+#page6 #svg4{
+    position: absolute;
+    bottom: 0;
+    width: 300vw;
+    fill: rgb(3, 54, 79);
+    z-index: 9;
+    overflow: hidden;
+}
+#page6 #svg5{
+    position: absolute;
+    bottom: 0;
+    left: -50vw;
+    width: 300vw;
+    fill: #E3E3C4;
+    overflow: hidden;
+}
+#page7{
+    height: 150vh;
+    width: 100%;
+    background-color: rgb(3, 54, 79);
+    position: relative;
+}
+#page7 h1{
+    text-align: center;
+    font-size: 4vw;
+    color: #e3e3c425;
+    font-family: "PP Woodland";
+    font-weight: 200;
+}
+#page7 p{
+    color: #E3E3C4;
+    text-align: center;
+    margin-top: 2vw;
+    font-weight: 200;
+}
+#page7-part1{
+    height: 20%;
+    width: 22%;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+#page7-part1 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+#page7-part1 h2{
+    color: #E3E3C4;
+    font-family: "PP Woodland";
+    font-weight: 150;
+    margin-top: 1vw;
+    font-size: 2vw;
+}
+#page7-part1>p{
+    padding: 0 1vw;
+    position: absolute;
+    top: 35vh;
+    left: -8.5%;
+    text-align: center;
+    line-height: 1.2;
+    font-family: gilroy;
+    color: #fff;
+}
+
+#page7-part2{
+    height: 20%;
+    width: 22%;
+    position: absolute;
+    top: 48%;
+    left: 45%;
+}
+#page7-part2 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+#page7-part2 h2{
+    color: #E3E3C4;
+    font-family: "PP Woodland";
+    font-weight: 150;
+    margin-top: 1vw;
+    font-size: 2vw;
+}
+#page7-part2>p{
+    padding: 0 1vw;
+    position: absolute;
+    top: 35vh;
+    left: -8.5%;
+    text-align: center;
+    line-height: 1.2;
+    font-family: gilroy;
+    color: #fff;
+}
+#page7-part3{
+    height: 20%;
+    width: 22%;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+}
+#page7-part3 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+#page7-part3 h2{
+    color: #E3E3C4;
+    font-family: "PP Woodland";
+    font-weight: 150;
+    margin-top: 1vw;
+    font-size: 2vw;
+}
+#page7-part3>p{
+    padding: 0 1vw;
+    position: absolute;
+    top: 35vh;
+    left: -8.5%;
+    text-align: center;
+    line-height: 1.2;
+    font-family: gilroy;
+    color: #fff;
+}
+#center h3{
+    color: #fff;
+    position: absolute;
+    bottom: 10%;
+    left: 40%;
+    font-size: 1.5vw;
+    font-family: gilroy;
+    font-weight: 400;
+    cursor: pointer;
+}
+#center>h3>i{
+    cursor: pointer;
+    color: #263015;
+    background-color: #fFFF;
+    padding: 1px 15px;
+    border-radius: 20px;
+    font-weight: 200;
+    margin-left: 5px;
+}
+#page8{
+    min-height: 25vh;
+    position: relative;
+    background-color: #F7F7EE;
+    padding-top: 5vw;
+    
+}
+#page8 #svg6{
+    position: absolute;
+    bottom: 0;
+    width: 300vw;
+    fill: rgb(3, 54, 79);
+    z-index: 9;
+    overflow: hidden;
+}
+#page8 #svg7{
+    position: absolute;
+    bottom: 0;
+    left: -50vw;
+    width: 300vw;
+    fill: #E3E3C4;
+    overflow: hidden;
+}
+#page9{
+    height: 100vh;
+    background-color: #F7F7EE;
+    padding-top: 8vw;
+}
+#page9 h1{
+    text-align: center;
+    font-size: 4vw;
+    color: #E3E3C4;
+    font-family: "PP Woodland";
+    font-weight: 400;
+}
+#page10{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    padding: 5vw 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F7F7EE;
+    
+}
+#page10-left{
+    height: 100%;
+    width: 35%;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/230/ALH_Odisej_outsidepool_01-scaled-600x0.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+#page10-center{
+    height: 100%;
+    width: 30%;
+    border-radius: 20px;
+    padding: 5vw 5vw;
+    text-align: center;
+}
+#page10-center h1{
+    font-size: 4vw;
+    text-align: center;
+    line-height: 4vw;
+    font-weight: 100;
+    color: #434B34;
+    font-family: "PP woodland";
+    margin-bottom: 5vw;
+
+}
+#page10-center p{
+    font-size: 1vw;
+    text-align: center;
+    font-weight: 500;
+}
+#page10-right{
+    height: 100%;
+    width: 35%;
+    background-image: url(https://hotelodisej.com/wp-content/uploads/bf-advanced-images/388/alh-img-2-600x0.jpeg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 20px;
+}
+#page11{
+    height: 100vh;
+    width: 100%;
+    background-color: #F7F7EE;
+}
+#page11 img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#page12{
+    min-height: 25vh;
+    padding-bottom: 5vw;
+    position: relative;
+    transform: rotate(180deg);
+    margin-top: -3vw;
+}
+#page12 #svg8{
+    position: absolute;
+    top: 0;
+    top: 5%;
+    width: 300vw;
+    fill: #5B6647;
+    z-index: 9;
+    overflow: hidden;
+}
+#page12 #svg9{
+    position: absolute;
+    left: -50vw;
+    top: 5%;
+    width: 300vw;
+    fill: #E3E3C4;
+    overflow: hidden;
+}
+#page13{
+    height: 100vh;
+    width: 100%; 
+    background-color: #5B6647;
+    margin-top: -3vw;
+    border-top: 1px solid #E3E3C4;
+}
+#page13-part1{
+    text-align: center;
+    margin-top: 5vw;
+}
+#page13-part1 h1{
+    text-align: center;
+    font-size: 4vw;
+    color: #434B34;
+    font-family: "PP Woodland";
+    font-weight: 200;
+    line-height: 1.1;
+}
+#page13-part1 p{
+    margin-top: 3vw;
+    color: #E3E3C4;
+    font-size: .8vw;
+    font-family: 'gilroy';
+}
+#page14{
+    height: 150%;
+    width: 100%;
+    background-color: #434B34;
+    display: flex;
+    
+}
+#page14-part1{
+    height: 600px;
+    width: 500px;
+    background-color: red;
+ 
+
+}
+#page14-part2{
+    height: 600px;
+    width: 500px;
+    background-color: rgb(58, 7, 7);
+}
+#page14-part3{
+    height: 600px;
+    width: 500px;
+    background-color: rgb(123, 255, 0);
+}
